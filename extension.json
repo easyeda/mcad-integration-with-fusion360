@@ -1,0 +1,68 @@
+{
+	"name": "mcad-integration-with-fusion360",
+	"uuid": "c7e2a4f61b9d47e8b3d5c0a1e2f3d4b5",
+	"displayName": "Fusion360机电协同",
+	"description": "通过WebSocket将PCB 3D模型发到Fusion360进行查看和编辑，支持双向交互",
+	"version": "1.0.0",
+	"publisher": "EasyEDA",
+	"engines": {
+		"eda": "^3.0.0"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/easyeda/eext-mcad-integration-with-fusion360"
+	},
+	"categories": "PCB",
+	"keywords": [
+		"Fusion360",
+		"PCB",
+		"STEP",
+		"3D",
+		"WebSocket",
+		"机电协同"
+	],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"homepage": "https://github.com/easyeda",
+	"bugs": "https://github.com/easyeda/eext-mcad-integration-with-fusion360/issues",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"pcb": [
+			{
+				"id": "exportToFusion360",
+				"title": "Fusion360机电协同",
+				"menuItems": [
+					{
+						"id": "ExportToFusion360",
+						"title": "导出3D到Fusion360",
+						"registerFn": "exportToFusion360"
+					},
+					{
+						"id": "EnableBidirectional",
+						"title": "启用双向交互",
+						"registerFn": "enableBidirectional"
+					},
+					{
+						"id": "DisableBidirectional",
+						"title": "停止双向交互",
+						"registerFn": "disableBidirectional"
+					},
+					{
+						"id": "DisconnectFusion360",
+						"title": "断开Fusion360",
+						"registerFn": "disconnectFusion360"
+					},
+					{
+						"id": "CopyFusion360Script",
+						"title": "下载脚本文件",
+						"registerFn": "copyFusion360Script"
+					}
+				]
+			}
+		]
+	}
+}
