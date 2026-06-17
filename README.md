@@ -1,4 +1,4 @@
-[简体中文](#)
+[English](README.en.md) | [简体中文](#)
 
 # Fusion360 机电协同 —— 嘉立创 EDA 专业版扩展
 

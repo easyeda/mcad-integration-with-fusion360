@@ -1,5 +1,6 @@
 {
 	"Fusion360机电协同": "Fusion360 MCAD Integration",
+	"通过WebSocket将PCB 3D模型发到Fusion360进行查看和编辑，支持双向交互": "Export PCB 3D model to Fusion360 via WebSocket for viewing and editing, with bidirectional interaction support",
 	"连接Fusion360": "Connect Fusion360",
 	"导出3D到Fusion360": "Export 3D to Fusion360",
 	"启用双向交互": "Enable Bidirectional",
